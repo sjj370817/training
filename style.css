@@ -96,6 +96,9 @@ ul{
     background-size: 100%;
 }
 
+.mobile{/***** on va plutôt l'afficher dans la partie resposible, pour faire l'effet inverse de block *******/
+    display: none;
+}
 .container_milieu{
     height: 352px;
     text-align: center;
@@ -258,39 +261,169 @@ P{
 }
 
 
-
 /**************** LA PARTIE RESPONSIBLE *****************/
 
 /*******Pour les smartPhone ******/ 
 @media screen and (max-width: 768px) {
     .menu2{
         display: none;
-    }
+    }   
 
-    .container_haut, .bloc, .container_bas, .container_bas2, 
-    .container_bas3, .container_bas4, .container_bas5,
-    .container_bas6, .container_bas7
-    {   
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 10px;
-    }
-
+    /******Le Menu******/
     .menu1{
         margin-top: 68px;
+        margin-bottom: 0;
         margin-right: 247px;
-        margin-left: 37px
+        margin-left: 20px
     }
 
-    .centre img, .centre h3, .centre h2, .centre p {
+    /********LA SECTION 1****/
+    .centre h3, .centre h2, .centre p {
         display: block;
         text-align: left;
+        margin-left: 30px;
+        width: 350px;
+    }
+
+    .centre{
+        padding-top: 10px;
     }
 
     .centre img{
         margin: 0;
+        margin-left: 30px;
     }
 
-  }
+    .centre h3{
+        font-size: 30px;
+    }
+
+    .centre h2{
+        font-size: 32px;
+    }
+
+    .centre p{
+        font-size: 21px;
+    }
+
+    /****** LA SECTION 2******/
+
+    .container_haut{
+        display: block;
+        width: 350px;
+        margin: 44px 32px 80px 32px
+    }
+
+    .bloc{ /****les peuvent maintenant être en flex pour mieux sans qu'ils n'occupent tout 
+        l'espace du parent container_haut, qui lui est en grid */
+        display: block;
+    }
+    .bloc div>h4{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .bloc1{
+        margin-bottom: 88px;
+    }
+
+    .bloc2{
+        margin-bottom: 88px;
+    }
+    .paragraph1{
+        width: 320px;
+        font-size: 17px;
+    }
+
+    /***********LA SECTION3******/
+
+    .bgimage1{/***La classe de la Div qui contient la section 3, pour que le contenu de la section encadré par 
+        un background image en position fixed */
+        background-image: none;
+    }
+    
+    .container_milieu{
+        text-align: left;
+        margin: 44px 32px 80px 32px
+      }
+    
+      .paragraph2{
+        width: 348px;
+        height:120px;
+        text-align: left;
+        font-weight : 800px;
+        text-shadow: 10px 10px 70px;
+        padding-top: 233px;
+        padding-bottom: 48px;
+    }
+
+    /**********LA SECTION 4*******/
+    .container_bas, .container_bas2{
+        display: block;
+        margin: 200px 32px 80px 32px;
+    
+    }
+
+    .container_bas2 h2{
+        font-size: 34px;
+        width:348px;
+    }
+
+    
+    #bloc2  {order: 0;}
+    d#bloc1 {order: 1;}
+    
+    .paragraph3{
+        width:348px;
+    }
+    .container_bas img, .container_bas2 img{
+        width:360px;
+        height: 338px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display:none;
+    }
+
+    .container_bas h5>span, .container_bas2 h5>span {
+        font-family: Manrope;
+        font-weight: 700px;
+        font-size: 18px;
+        margin-right: 0px;
+    }
+
+    /******** LA SECTION 6 ********/
+    .container_bas3{
+        margin: 100px 32px 80px 32px;
+    }
+    .container_bas3 h2{
+        width: 350px;
+        font-family: Manrope;
+        font-weight: 800px;
+        font-size: 34px;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+}
+
+.paragraph4{
+    text-align: left;
+}
+
+.container_bas3-1, img{
+    width: 100%
+    height: 450px;
+
+}
+
+.paragraph5{
+    width:348px ;
+    
+}
+
+}
 
