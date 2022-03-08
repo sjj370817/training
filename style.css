@@ -1,0 +1,296 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/******** LA PARTIE HEADER DANS LE BODY ****/
+header{
+    color: white;
+    background:black;
+}
+
+ul{
+	list-style-type: none; 
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+}
+
+ .menu li{
+    float: left;
+}
+.clear{
+	clear:both; 
+}
+
+
+.menu li a{
+    display: block;
+    text-align: center;
+    padding: 16px 10px 15.38px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu1{
+    margin-right: 667px;
+    margin-left: 88px
+}
+
+/******** LA PARTIE MAIN ***********/
+
+/***** SECTION1 ******/
+.centre{
+    color: white;
+    background:black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.centre img{
+    display: block;
+    margin: auto;
+}
+
+.centre h3, .centre h2, .centre P{
+    text-align: center;
+}
+
+.centre h3>span{
+    color: #EE8A09;
+}
+.centre p>span{
+    color: #AAAAAA;;
+}
+
+/***** SECTION 2 ******/
+.container_haut{ /*j'ai mis en grid pour mieux manipuler ses enfants **/
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    height: 372px;
+}
+
+
+.bloc{ /****les peuvent maintenant être en flex pour mieux sans qu'ils n'occupent tout 
+    l'espace du parent container_haut, qui lui est en grid */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item{/* je termine par les justifiés au centre*/
+    justify-content: center;
+}
+
+.item img{
+    margin-right: 79px;
+}
+
+/****** SECTION 3 *********/
+.bgimage1{/***La classe de la Div qui contient la section 3, pour que le contenu de la section encadré par 
+    un background image en position fixed */
+    background-image: url('fond1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container_milieu{
+    height: 352px;
+    text-align: center;
+  }
+  
+  
+
+/************* LA SECTION 4 *********/
+.container_bas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 71px;
+
+}
+
+
+/************* LA SECTION 5 *********/
+.container_bas2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 230px;
+    
+}
+/************* Appliquer sur css sur les h2, h5 et span des section 4 et 5 *********/
+.container_bas div>span, .container_bas2 div>span{
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 800px;
+    text-transform: uppercase;
+    color: #AAAAAA;
+
+}
+
+.container_bas h2, .container_bas2 h2{
+    width: 517px;
+    font-family: Manrope;
+    font-weight: 800px;
+    font-size: 44px;
+   
+}
+
+.container_bas h5>span, .container_bas2 h5>span {
+    font-family: Manrope;
+    font-weight: 700px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+
+/******** LA SECTION 6 ********/
+.container_bas3{
+    margin-top: 220px;
+    margin-bottom: 58px;
+
+}
+.container_bas3 h2{
+    width: 624px;
+    font-family: Manrope;
+    font-weight: 800px;
+    font-size: 44px;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    
+}
+/***********************************/
+
+/******** Modificaton des bouttons *********/
+.button1{ 
+    text-align: center;
+     
+}
+
+.button2{
+    position: absolute;
+    margin-left: 411px;
+    margin-right: 424px;
+
+}
+
+/****** Pour leur appliquer du css en plus ***********/ 
+.changed, .changed1{
+    background: none;
+    border: 2px solid #222222;
+    width: 239px;
+    height: 51px;
+    padding: 2px;
+}
+.changed1{
+    background: #222222;
+    color: #f3f0f0;
+    margin-right: 32px;
+}
+
+
+/******* LA SECTION 7 ****************/
+.bgimage2{/***La classe de la Div qui contient la section 7, pour que le contenu de la section encadré par 
+    un background image en position fixed */
+    background-image: url('fond2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container_bas4{
+    display: flex;
+    justify-content: space-around;  
+    padding-top: 117px;
+    padding-bottom: 116px;
+}
+
+/******** LA PARTIE FOOTER **********/
+footer{
+    width: 100%;
+    height: 272px;
+    color: white;
+    background:black;
+}
+.container_bas5{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/************** Des classes qui seront affectés *****************/
+P{
+    font-size: 18px;
+}
+
+.title-1 { 
+        font-size: 13px;
+    }
+
+.paragraph1{
+    width: 410px;
+    height: 78px;
+}
+
+.paragraph2{
+    height:120px;
+    text-align: center;
+    font-weight : 800px;
+    text-shadow: 10px 10px 70px;
+    padding-top: 61px;
+}
+
+.paragraph3{
+    width:517px;
+}
+
+.paragraph4{
+    text-align: center;
+}
+
+.paragraph5{
+    width:308px ;
+    height:184px;
+}
+
+
+
+/**************** LA PARTIE RESPONSIBLE *****************/
+
+/*******Pour les smartPhone ******/ 
+@media screen and (max-width: 768px) {
+    .menu2{
+        display: none;
+    }
+
+    .container_haut, .bloc, .container_bas, .container_bas2, 
+    .container_bas3, .container_bas4, .container_bas5,
+    .container_bas6, .container_bas7
+    {   
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    .menu1{
+        margin-top: 68px;
+        margin-right: 247px;
+        margin-left: 37px
+    }
+
+    .centre img, .centre h3, .centre h2, .centre p {
+        display: block;
+        text-align: left;
+    }
+
+    .centre img{
+        margin: 0;
+    }
+
+  }
+
